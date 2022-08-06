@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Models\patient;
+use App\Models\Patient;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +15,7 @@ use App\Models\patient;
 |
 */
 
-Route::post("/addpatient", function (Request $request) {
-    return response("request", 200);
-});
+Route::post("/addpatient", 'App\Http\Controllers\patientController@AddNewPatient');
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

@@ -120,20 +120,20 @@
 
 <body>
     <div class="container">
-        <form method="POST" action="http://localhost:3306/api/addpatient">
+        <form method="POST" action="http://localhost:8000/api/addpatient">
             <p><strong> Patient</strong></p>
-            <input name="id" type="text" placeholder="N°Dossier"><br>
+            <!-- <input name="id" type="text" placeholder="N°Dossier"><br> -->
             <input name="nom" type="text" placeholder="Nom"><br>
             <input name="prenom" type="text" placeholder="Prenom"><br>
-            <input name="date" type="datetime-local" placeholder="Date" id="date"><br>
+            <input name="date" type="datetime-local" id="date"><br>
             <input name="age" type="number" placeholder="Age"><br>
             <input name="profession" type="text" placeholder="Profession"><br>
 
 
             <p><strong>Coordonnées Patient</strong></p>
             <input name="email" type="email" placeholder="Email"><br>
-            <input name="num1" type="text" placeholder="Téléphone 01"><br>
-            <input name="num2"type="text" placeholder="Téléphone 02"><br>
+            <input name="num1" type="number" placeholder="Téléphone 01"><br>
+            <input name="num2"type="number" placeholder="Téléphone 02"><br>
             <input name="adresse" type="text" placeholder="Adresse"><br>
 
             <p><strong>Autre</strong></p>
@@ -141,7 +141,7 @@
             <input name="groupes" type="text" placeholder="Groupe Sanguin"><br>
             <input name="etat" type="text" placeholder="etat Familial"><br>
             <input name="note" type="text" placeholder="Note"><br>
-            <button type="submit" name="suivant" id="button">suivant</button>
+            <button type="submit" id="button">suivant</button>
         </form>
     </div>
 </body>
