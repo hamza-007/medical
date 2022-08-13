@@ -8,8 +8,7 @@ use Illuminate\Http\Request;
 
 class patientController extends Controller
 {
-    //add new patient function
-
+    //add new patient
 
     public function AddNewPatient()
     {
@@ -32,10 +31,16 @@ class patientController extends Controller
         return response("succes", 200);
     }
 
-
+    // update patient by id
     public function UpdatePatient($id)
     {
-        $patient = patient::findOrfail($id);
+        $patient = patient::find($id);
+
+        //handle not found error
+        if (!isset($patient)){
+            return response("not found (bad request)",403);
+        }
+
         $patient->nom = request('nom');
         $patient->prenom  = request('prenom');
         $patient->date  = request('date');
@@ -50,23 +55,35 @@ class patientController extends Controller
         $patient->etat  = request('etat');
         $patient->note  = request('note');
         $patient->save();
-        return response('patient ajoute', 200);
+        
+        return response('patient modifier ! ', 200);
     }
-    public function deletPatient($id)
+
+    //delete patient by id
+    public function deletePatient($id)
     {
-        $patient = patient::findOrfail($id);
+        $patient = patient::find($id);
+        if(!isset($patient)){
+            return response("patient not found",403);
+        }
         $patient->delete();
         return response('patient supprime', 200);
     }
-    public function getAllPatient()
+
+    // list of all patients
+    public function getAllPatients()
     {
         return patient::all();
     }
+    //get patient by id
     public function getPatientById($id)
     {
-        $patient = patient::findOrfail($id);
-        return $patient;tfakaret
-     good night
+        $patient = patient::find($id);
+        if(!isset($patient)){
+            return response("patient not found");
+        }
+        return response($patient,200);
     }
+
 
 }

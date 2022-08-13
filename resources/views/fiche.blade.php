@@ -120,7 +120,7 @@
 
 <body>
     <div class="container">
-        <form method="POST" action="http://localhost:8000/api/addpatient">
+        <form method="POST" action="http://localhost:8000/api/patient/add">
             <p><strong> Patient</strong></p>
             <!-- <input name="id" type="text" placeholder="N°Dossier"><br> -->
             <input name="nom" type="text" placeholder="Nom"><br>

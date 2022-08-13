@@ -15,8 +15,13 @@ use App\Models\Patient;
 |
 */
 
-Route::post("/addpatient", 'App\Http\Controllers\patientController@AddNewPatient');
-
+Route::prefix('/patient')->group(function () {
+    Route::post("/add", 'App\Http\Controllers\patientController@AddNewPatient');
+    Route::get("/{id}", 'App\Http\Controllers\patientController@getPatientById');
+    Route::get("/all", 'App\Http\Controllers\patientController@getAllPatients');
+    Route::delete("/delete/{id}", 'App\Http\Controllers\patientController@deletePatient');
+    Route::post("/update/{id}", 'App\Http\Controllers\patientController@UpdatePatient');
+});
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
