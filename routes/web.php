@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('indexe');
+    return view('welcome');
 });
 
 require __DIR__ . '/auth.php';
@@ -24,9 +24,7 @@ Route::get('/welcomepatient', function () {
 Route::get('/staff', function () {
     return view('staff');
 });
-Route::get('/index', function () {
-    return view('index');
-});
+
 
 Route::get('/loginpatient', function () {
     return view('loginpatient');
