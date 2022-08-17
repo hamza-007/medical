@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
     <style>
         body {
             background-image: linear-gradient(45deg, #ebf7f61b, #e6e7d816) ,url(img/d.jpeg);
@@ -112,17 +113,17 @@
 
 
     </style>
-    <title>Document</title>
+
 </head>
 
 <body>
     <div class="container">
         <form>
-            <p><strong>Inscription</strong></p>
+            <p><strong>Register</strong></p>
             <input type="text" placeholder="Adresse e-mail"><br>
-            <input type="text" placeholder="Nouveau mot de passe"><br>
-            <input type="text" placeholder="Confirmer le mot de passe"><br>
-            <input type="button" name="Inscription" value="Inscription" id="button">
+            <input type="text" placeholder="New password"><br>
+            <input type="text" placeholder="Confirm password"><br>
+            <input type="button" name="Register" value="Register" id="button">
             <i class="fa-duotone fa-user"></i>
         </form>
 

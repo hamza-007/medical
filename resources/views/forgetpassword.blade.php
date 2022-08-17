@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Staff</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Patient</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <style>
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *{
     margin:0;
@@ -18,7 +14,6 @@
     box-sizing:border-box;
     font-family:'Poppins',sans-serif;
 }
-
 section{
     position: relative;
     width: 100%;
@@ -60,40 +55,23 @@ section .contentBx .formBx{
     width: 50%;
 }
 section .contentBx .formBx h2{
-    color: #8ca681;
+    color: #00987F;
     font-weight: 600;
     font-size: 1.5em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    border-bottom: 4px solid #8de6b6;
+    border-bottom: 4px solid #b3d243ce;
     display: inline-block;
     letter-spacing: 1px;
 }
 section .contentBx .formBx .inputBx{
     margin-bottom: 20px;
 }
-section .contentBx .formBx .inputBx h3{
-    font-size: 20px;
-    text-align: left;
-    margin-top: -5px;
-}
-section .contentBx .formBx .inputBx .radio input{
-    width: 20px;
-    height: 20px;
-    border-radius: 25%;
-    cursor: pointer;
-    outline: none;
-    color: #8de6b6;
-}
-section .contentBx .formBx .inputBx #M{
-    margin-left:80px;
-    color: #667451;
-}
 section .contentBx .formBx .inputBx span{
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
-    color: #8ca681;
+    color: #00987F;
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 1px;
@@ -103,15 +81,15 @@ section .contentBx .formBx .inputBx input{
     padding: 10px 20px;
     outline: none;
     font-weight: 400;
-    border: 1px solid#8ca681;
+    border: 1px solid#00987F;
     font-size: 16px;
     letter-spacing: 1px;
-    color: #8ca681;
+    color: #00987F;
     background: transparent;
     border-radius: 30px;
 }
 section .contentBx .formBx .inputBx input[type="submit"]{
-    background: #8de6b6;
+    background: #b2d243;
     color: #fff;
     outline: none;
     border: none;
@@ -119,17 +97,31 @@ section .contentBx .formBx .inputBx input[type="submit"]{
     cursor: pointer;
 }
 section .contentBx .formBx .inputBx input[type="submit"]:hover{
-    background: #8ca681;
+    background: #04c4a4;
 }
-
+section .contentBx .formBx .remember{
+    margin-bottom: 10px;
+    color: #00987F;
+    font-weight: 400;
+    font-size: 14px;
+}
 section .contentBx .formBx .inputBx p{
-    color: #8ca681;
+    color: #00987F;
+    background: #b2d243;
+    border-radius: 30px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 section .contentBx .formBx .inputBx p a{
-    color: #8de6b6;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 3.5rem;
+    text-decoration: none;
 }
 section .contentBx .formBx h3{
-    color: #8ca681;
+    color: #00987F;
     text-align: center;
     margin: 80px 0 10px;
     font-weight: 500;
@@ -139,7 +131,6 @@ section .contentBx .formBx .sci{
     justify-content: center;
     align-items: center;
 }
-
 section .contentBx .formBx .sci li{
     list-style: none;
     width: 50px;
@@ -147,22 +138,19 @@ section .contentBx .formBx .sci li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #8ca681;
+    background: #00987F;
     border-radius: 50%;
     margin: 0 7px;
     cursor: pointer;
 }
 section .contentBx .formBx .sci li:hover{
-    background: #8de6b6;
+    background: #b2d243;
 
 }
 section .contentBx .formBx .sci li a{
 
     filter: invert(1);
     color: #000;
-}
-section .contentBx .formBx .radio{
-    padding: 10px;
 }
 @media (max-width: 768px){
     section .imgBx{
@@ -192,53 +180,37 @@ section .contentBx .formBx .radio{
         font-weight: 500;
     }
 }
-
 </style>
-</head>
+    </head>
+    <body>
+        <section>
+            <div class="contentBx">
+                <div class="formBx">
+                    <h2>
+                      Login
+                    </h2>
+                    <form>
+                        <div class="inputBx">
+                            <span>Username or number</span>
+                            <input type="text" name="">
+                        </div>
 
-<body>
-    <section>
-        <div class="imgBx">
-            <img src="img/staff2.jpeg">
-        </div>
-        <div class="contentBx">
-            <div class="formBx">
-                <h2>
-                    Login
-                </h2>
-                <form method="post" action="">
-                    <div class="inputBx">
-                        <span>Username</span>
-                        <input type="text" name="">
-                    </div>
+                        <div class="inputBx">
+                            <p><a href="code">Next <br></a></p>
+                         </div>
 
-                    <div class="inputBx">
-                        <span>Password</span>
-                        <input type="password" name="">
-                    </div>
-
-                    <div class="inputBx">
-                  <input type="submit" value="Sign in" name="">
-                    </div>
-
-                    <div class="inputBx">
-                        <p>Don't have an account ? <a href="creation">Sign up</a></p>
-                    </div>
-                    <div class="inputBx">
-                        <p><a href="forgetstaff">Forget your password?</a></p>
-                    </div>
-
-                </form>
-                <ul class="sci">
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
+                    </form>
+                    <ul class="sci">
+                        <li><a href="code"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            <div class="imgBx">
+                <img src="img/pa.jpeg">
+            </div>
 
-    </section>
-</body>
-
+        </section>
+    </body>
 </html>
-

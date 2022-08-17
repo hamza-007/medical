@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fullscreen Responsive Login Page</title>
+        <title>Login Patient</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="medical.css">
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
@@ -110,7 +109,7 @@ section .contentBx .formBx .inputBx p{
     color: #00987F;
 }
 section .contentBx .formBx .inputBx p a{
-    color: #b2d243;
+    color: #46b094;
 }
 section .contentBx .formBx h3{
     color: #00987F;
@@ -172,7 +171,6 @@ section .contentBx .formBx .sci li a{
         font-weight: 500;
     }
 }
-
 </style>
     </head>
     <body>
@@ -201,7 +199,7 @@ section .contentBx .formBx .sci li a{
                         </div>
 
                         <div class="inputBx">
-                           <p>Don't have an account ? <a href="#"><br>Sign up</a></p>
+                           <p><a href="forgetpassword">Forget your password? <br></a></p>
                         </div>
                     </form>
                     <ul class="sci">

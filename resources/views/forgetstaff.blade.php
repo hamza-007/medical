@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Staff</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Patient</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <style>
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *{
     margin:0;
@@ -121,12 +117,20 @@ section .contentBx .formBx .inputBx input[type="submit"]{
 section .contentBx .formBx .inputBx input[type="submit"]:hover{
     background: #8ca681;
 }
-
 section .contentBx .formBx .inputBx p{
     color: #8ca681;
+    background: #8de6b6;
+    border-radius: 30px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 section .contentBx .formBx .inputBx p a{
-    color: #8de6b6;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 3.5rem;
+    text-decoration: none;
 }
 section .contentBx .formBx h3{
     color: #8ca681;
@@ -194,51 +198,37 @@ section .contentBx .formBx .radio{
 }
 
 </style>
-</head>
+    </head>
+    <body>
+        <section>
+            <div class="contentBx">
+                <div class="formBx">
+                    <h2>
+                      Login
+                    </h2>
+                    <form>
+                        <div class="inputBx">
+                            <span>Username or number</span>
+                            <input type="text" name="">
+                        </div>
 
-<body>
-    <section>
-        <div class="imgBx">
-            <img src="img/staff2.jpeg">
-        </div>
-        <div class="contentBx">
-            <div class="formBx">
-                <h2>
-                    Login
-                </h2>
-                <form method="post" action="">
-                    <div class="inputBx">
-                        <span>Username</span>
-                        <input type="text" name="">
-                    </div>
+                        <div class="inputBx">
+                            <p><a href="codestaff">Next <br></a></p>
+                         </div>
 
-                    <div class="inputBx">
-                        <span>Password</span>
-                        <input type="password" name="">
-                    </div>
-
-                    <div class="inputBx">
-                  <input type="submit" value="Sign in" name="">
-                    </div>
-
-                    <div class="inputBx">
-                        <p>Don't have an account ? <a href="creation">Sign up</a></p>
-                    </div>
-                    <div class="inputBx">
-                        <p><a href="forgetstaff">Forget your password?</a></p>
-                    </div>
-
-                </form>
-                <ul class="sci">
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
+                    </form>
+                    <ul class="sci">
+                        <li><a href="code"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            <div class="imgBx">
+                <img src="img/staff2.jpeg">
+            </div>
 
-    </section>
-</body>
-
+        </section>
+    </body>
 </html>
 
