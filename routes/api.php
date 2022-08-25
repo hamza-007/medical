@@ -26,16 +26,6 @@ Route::prefix('/patient')->group(function () {
 Route::post("/sign-in",function(){
     $username= request ("username");
     $password = request("password");
-
-    // bech ta5ohom mel bd w tevrifi est ce que paswrd w usrname homa nafshom
-
-    // if (true) {
-    //     return redirect("/home page")
-    // }else {
-    //     return  view("login",{$err : "username or password wrong !! " })
-    // }
-
-
 });
 
 
