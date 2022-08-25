@@ -56,6 +56,7 @@ Route::get('/homedoctor', function () {
 Route::get('/PatientDoctor', function () {
     return view('doctor\PatientDoctor');
 });
+
 Route::get('/finance', function () {
     return view('doctor\finance');
 });
@@ -82,8 +83,13 @@ Route::get('/TasksDoctor', function () {
     return view('doctor\TasksDoctor');
 });
 
+<<<<<<< HEAD
 Route::get('/confirm', function () {
     return view('patient\homePatient');
+=======
+Route::get('/confirmation', function () {
+    return view('homePatient');
+>>>>>>> 27170c69bf3e11dbcafd53f727702cf566076e68
 });
 
 
