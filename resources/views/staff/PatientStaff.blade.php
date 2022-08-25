@@ -24,7 +24,7 @@
             </div>
 
             <div class="profile-card">
-                <div class="profile-img" style="background-image: url(img/6.jpg)"></div>
+                <div class="profile-img" style="background-image: url(img/9.jpg)"></div>
                 <div class="profile-info">
                     <h2>Balghouthi Latifa</h2>
                     <small>Secrétaire Médicale</small>

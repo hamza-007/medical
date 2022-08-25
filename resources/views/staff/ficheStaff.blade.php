@@ -24,7 +24,7 @@
             </div>
 
             <div class="profile-card">
-                <div class="profile-img" style="background-image: url(img/6.jpg)"></div>
+                <div class="profile-img" style="background-image: url(img/9.jpg)"></div>
                 <div class="profile-info">
                     <h2>Balghouthi Latifa</h2>
                     <small>Secrétaire Médicale</small>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="menu-item">
-                    <a href="">
+                    <a href="planingStaff">
                         <span class="las la-columns"></span>
                         <span>Planing</span>
                     </a>
@@ -81,7 +81,7 @@
 
 
                 <div class="menu-item">
-                    <a href="">
+                    <a href="taskStaff">
                         <span class="las la-tasks"></span>
                         <span>Tasks</span>
                     </a>

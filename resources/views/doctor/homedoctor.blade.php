@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="menu-item">
-                    <a href="#">
+                    <a href="messagesdoctor">
                         <span class="las la-comments"></span>
                         <span>Messages</span>
                     </a>
@@ -286,7 +286,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <a href="" class="btn btn-primary">Contact</a>
+                                            <a href="dossierPatient" class="btn btn-primary">Contact</a>
                                         </td>
                                     </tr>
 

@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-
 :root {
-    --color-main: #89c7d6;
-    --color-secondary: #5fa4a7;
-    --bg-body: #eae80;
-    --main-accent: #4793a7;
-    --main-text: #036f7e;
+    --color-main: #959bbd;
+    --color-secondary: #e7d3ee;
+    --bg-body: #f9f8fb;
+    --main-accent: #FFB6C1;
+    --main-text: #c9b8da;
     --success: #28a745;
     --danger: #dc3545;
     --shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
@@ -74,8 +73,23 @@ body {
 }
 
 .brand h3 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: #fff;
+    letter-spacing: .3rem;
+    margin-top: 2rem;
+}
+
+.brand span {
+    font-size: 48px;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.brand small {
+    font-size: .9rem;
+    color: #fff;
+    letter-spacing: .1rem;
+    margin-top: 1rem;
 }
 
 .profile-card {
@@ -86,12 +100,13 @@ body {
 .profile-img {
     height: 100px;
     width: 100px;
-    border-radius: 50%;
+    border-radius: 20%;
     margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 1.8rem;
     margin-bottom: 1.3rem;
+    background-color: #fff;
 }
 
 .profile-info {
@@ -123,7 +138,7 @@ body {
 }
 
 .btn-white {
-    background: #fff;
+    color: #fff !important;
 }
 
 .btn-main {
@@ -186,9 +201,9 @@ body {
 .sidebar-card {
     padding: 1rem;
     border-radius: 10px;
-    background: var(--color-secondary);
+    background: #959bbd;
     margin: 2rem 0rem;
-    color: #fff;
+    color: #fff !important;
 }
 
 .sidebar-card h3 {
@@ -233,6 +248,7 @@ header label {
 .head-icons {
     display: flex;
     align-items: center;
+    margin: 1rem;
 }
 
 .head-icons span {
@@ -241,11 +257,44 @@ header label {
     font-size: 1.2rem;
 }
 
-.head-avatar {
+.head-icons input {
     display: flex;
     align-items: center;
     border-radius: 20px;
     background: #aae4e6;
+}
+
+.head-icons-search {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 1rem;
+    margin-top: -0.5rem;
+}
+
+.head-icons-search span {
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+    color: #5fa4a7;
+}
+
+.head-icons-search input {
+    height: 100%;
+    width: 30rem;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+
+.head-avatar {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--main-accent);
 }
 
 .head-avatar .avatar {
@@ -279,18 +328,22 @@ header label {
     background: #fff;
     border-radius: 10px;
     box-shadow: var(--shadow);
+    padding: 1.5rem;
 }
 
 .card-head {
     font-size: 1rem;
     color: #555;
     font-weight: 600;
-    padding: 1rem 2rem;
+    padding: -1rem -1rem;
     border-bottom: 1px solid #eee;
+    margin: 2rem;
 }
 
 .card-body {
     padding: 1.5rem 2rem;
+    background: #c9b8da;
+    border-radius: .5rem;
 }
 
 .card-footer {
@@ -388,167 +441,4 @@ table h3,
 .competitors .card-body h4 {
     color: #333;
     margin-bottom: .3rem;
-}
-
-.grid-2 {
-    margin-top: 3.5rem;
-    display: grid;
-    grid-template-columns: 65% auto;
-    grid-gap: 2rem;
-    margin-bottom: 3.5rem;
-}
-
-.team-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-}
-
-.team-head img {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 5rem;
-    margin-left: 3rem;
-}
-
-.team-head small {
-    color: var(--main-text);
-    font-weight: 600;
-    margin-left: 4rem;
-}
-
-
-.team-head select {
-    display: inline-block;
-    height: 38px;
-    padding: .5rem 2rem;
-    border-radius: 8px;
-    background: #efefef;
-    border: none;
-    outline: none;
-}
-
-.team-info {
-    display: flex;
-    align-items: center;
-}
-
-.team-img {
-    height: 50px;
-    width: 50px;
-    border-radius: 8px;
-    background: var(--bg-body);
-    margin-right: .7rem;
-    padding: .8rem;
-}
-
-.team-progress>h4 {
-    color: var(--main-text);
-    margin-bottom: .5rem;
-}
-
-.progress-bar {
-    width: 100%;
-    background: #efefef;
-    position: relative;
-    border-radius: 10px;
-    height: 15px;
-}
-
-.indicator {
-    height: 100%;
-    border-radius: 10px;
-}
-
-.indicator.success {
-    background: var(--success);
-}
-
-.indicator.danger {
-    background: var(--danger);
-}
-
-.indicator.info {
-    background: var(--color-main);
-}
-
-.indicator.warning {
-    background: var(--color-secondary);
-}
-
-.compete-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.3rem;
-}
-
-.compete-info>div:first-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: .7rem;
-}
-
-.compete-info img {
-    width: 100px;
-    border-radius: 10px;
-    margin-right: .7rem;
-}
-
-.competitors .card-body {
-    padding: 1rem;
-}
-
-.compete-details small {
-    display: inline-block;
-    margin-bottom: .3rem;
-}
-
-.compete-details p>a {
-    color: var(--color-main);
-    font-weight: 600;
-}
-
-.compete-sales {
-    text-align: right;
-}
-
-.compete-sales span {
-    font-size: .9rem;
-    font-weight: 600;
-}
-
-.compete-sales h3 {
-    color: #444 !important;
-    font-size: .8rem;
-}
-
-@media only screen and (max-width: 1280px) {
-    .sidebar {
-        display: none;
-    }
-
-    #menu-toggle:checked~.sidebar {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 980px) {
-    .main-content {
-        padding: 0 20px;
-        flex: 1;
-    }
-
-    .analytics,
-    .grid-2 {
-        grid-template-columns: 100%;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    .page-wrapper::before {
-        min-width: 640px;
-    }
 }

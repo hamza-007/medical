@@ -183,7 +183,7 @@ section .contentBx .formBx .sci li a{
                     <h2>
                       Login
                     </h2>
-                    <form>
+                    <form  method="Post" action="{{route('login')}}">
                         <div class="inputBx">
                             <span>Username</span>
                             <input type="text" name="">

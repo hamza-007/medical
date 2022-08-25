@@ -4,6 +4,10 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+/**faire lien avec BD*/
+
+use Illuminate\Support\facades\Schema;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,6 +27,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //taille par defaut
+        schema::defaultStringLength(191);
     }
 }

@@ -892,6 +892,9 @@
                         <div><img src="img/account.png" alt="">
                             <h3><a href="#">Compte</a></h3>
                         </div>
+                        <div><img src="img/add-user.png" alt="">
+                            <h3><a href="addStaff">Add Staff</a></h3>
+                        </div>
                         <div><img src="img/help-desk.png" alt="">
                             <h3><a href="#">Aide</a></h3>
                         </div>

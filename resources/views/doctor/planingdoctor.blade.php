@@ -797,7 +797,7 @@ main{
                 <div class="planing">
                     <div id="calendar"></div>
                     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-                    <script src="{{url('evo-calendar.min.js')}}"></script>
+                    <script src="{{url('/js/evo-calendar.min.js')}}"></script>
 
                     <script>
 

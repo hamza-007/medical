@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task</title>
+    <title>Admin Dashboard Pacers</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
         :root {
-            --color-main: #99bddf;
-            --color-secondary: #9ad9db;
-            --bg-body: #fff;
-            --main-accent: #eb96aa;
-            --main-text: #2f4f75;
+            --color-main: #254e7a;
+            --color-secondary: #85c1e5;
+            --bg-body: #f7f3ea;
+            --main-accent: #254e7a;
+            --main-text: #6ca5c7;
             --success: #28a745;
             --danger: #dc3545;
             --shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
@@ -85,7 +86,7 @@
 
         .brand h3 {
             font-size: 1.7rem;
-            color: #fff;
+            color: #f7f3ea;
             letter-spacing: .3rem;
             margin-top: 2rem;
         }
@@ -98,7 +99,7 @@
 
         .brand small {
             font-size: .9rem;
-            color: #fff;
+            color: #f7f3ea;
             letter-spacing: .1rem;
             margin-top: 1rem;
         }
@@ -120,7 +121,7 @@
         }
 
         .profile-info {
-            color: #fff;
+            color: #f7f3ea;
         }
 
         .profile-info h2 {
@@ -136,11 +137,6 @@
             margin: 1.7rem;
         }
 
-        .btn1 {
-            display: flex;
-            margin-left: 12rem;
-        }
-
         .btn {
             border: none;
             outline: none;
@@ -149,15 +145,15 @@
             display: flex;
             align-items: center;
             background: var(--main-accent) !important;
-            color: #fff;
-            margin-right: 1rem;
+            color: #f7f3ea;
         }
+
         .btn-white {
-            background: #fff;
+            background: #f7f3ea;
         }
 
         .btn-main {
-            color: #fff;
+            color: #f7f3ea;
             background: var(--color-main);
         }
 
@@ -176,7 +172,7 @@
 
         .profile-icons span {
             display: inline-block;
-            color: #fff;
+            color: #f7f3ea;
             font-size: 1.65rem;
         }
 
@@ -210,15 +206,15 @@
         }
 
         .menu-item a.active span {
-            color: #fff;
+            color: #f7f3ea;
         }
 
         .sidebar-card {
             padding: 1rem;
             border-radius: 10px;
-            background: #99bddf;
+            background: #85c1e5;
             margin: 2rem 0rem;
-            color: #fff !important;
+            color: #f7f3ea;
         }
 
         .sidebar-card h3 {
@@ -252,7 +248,7 @@
             align-items: center;
             height: 70px;
             border-bottom: 1px solid var(--main-text);
-            color: #fff;
+            color: #f7f3ea;
         }
 
         header label {
@@ -295,7 +291,7 @@
         }
 
         .page-header {
-            color: #fff;
+            color: #f7f3ea;
             margin: 1rem 0rem;
         }
 
@@ -307,7 +303,7 @@
         }
 
         .card {
-            background: #fff;
+            background: #f7f3ea;
             border-radius: 10px;
             box-shadow: var(--shadow);
         }
@@ -334,6 +330,9 @@
 
         .card-body {
             padding: 1.5rem 2rem;
+            background: #fff;
+            width: 30rem;
+            border-radius: 1rem;
         }
 
         .card-footer {
@@ -362,17 +361,17 @@
 
         .bg-success {
             background: var(--success);
-            color: #fff;
+            color: #f7f3ea;
         }
 
         .bg-danger {
             background: var(--danger);
-            color: #fff;
+            color: #f7f3ea;
         }
 
         .bg-warning {
             background: var(--color-secondary);
-            color: #fff;
+            color: #f7f3ea;
         }
 
         .email-stat {
@@ -602,6 +601,7 @@
                 min-width: 640px;
             }
         }
+
         .card {
             background: #fff;
         }
@@ -683,59 +683,115 @@
         }
 
         .main-home1 {
-            background: var(--color-main);
+            background: var(--bg-body);
             padding: 1rem;
             border-radius: 2rem;
             width: 40rem;
         }
 
-        .quotes .p3 {
+        .main-home1 div {
+            display: flex;
+            margin: 2rem;
+        }
+
+        .main-home1 div img {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .main-home1 div h3 {
+            margin-top: 2rem;
+            margin-left: 1.3rem;
+        }
+
+        .main-home1 div h3 a {
+            margin-top: 2rem;
+            margin-left: 1.3rem;
+            color: #6ca5c7;
+        }
+
+        .quotes .p1 {
             background: #f4cfdf;
             border-radius: 1rem;
             padding: 1rem;
             width: 15rem;
             margin-top: 1rem;
             color: #074c66;
+            display: flex;
+        }
+
+        .quotes .p1 a {
+            color: #fff;
+            font-size: 20px;
+            margin-left: 1rem;
+            margin-top: .7rem;
+        }
+
+        .quotes .p1 img {
+            width: 3rem;
+            height: 3rem;
         }
 
         .quotes .p2 {
-            background: #f7f6cf;
-            border-radius: 1rem;
-            padding: 1rem;
-            width: 15rem;
-            margin-top: 1rem;
-            color: #074c66;
-        }
-
-        .quotes .p1 {
-            background: #98d4bb;
-            border-radius: 1rem;
-            padding: 1rem;
-            width: 15rem;
-            margin-top: 1rem;
-            color: #074c66;
-        }
-
-        .quotes .p4 {
             background: #9ad9db;
             border-radius: 1rem;
             padding: 1rem;
             width: 15rem;
             margin-top: 1rem;
-            color: #074c66;
+            display: flex;
         }
 
-        .quotes .p5 {
-            background: #e5dbd9;
-            border-radius: 1rem;
-            padding: 1rem;
-            width: 15rem;
-            margin-top: 1rem;
-            color: #074c66;
+        .quotes .p2 a {
+            color: #fff;
+            font-size: 20px;
+            margin-left: 1rem;
+            margin-top: .7rem;
+        }
+
+        .quotes .p2 img {
+            width: 3rem;
+            height: 3rem;
         }
 
         .stories-title {
             color: var(--bg-body);
+        }
+
+        #style {
+            display: flex;
+            width: 54rem;
+            margin-bottom: .5rem;
+            margin-left: 3rem;
+        }
+
+        #style h3 {
+            margin-right: .5rem;
+            color: #6ca5c7;
+            font-size: 20px;
+        }
+
+        #style h4 {
+            margin-top: .1rem;
+            font-size: 18px;
+            color: #254e7a;
+        }
+
+        #image {
+            width: 27rem;
+            height: 27rem;
+        }
+        #button {
+            display: flex;
+            margin: 1rem;
+            margin-left: 7rem;
+        }
+        #button button {
+            margin-right: .5rem;
+        }
+        #Delete {
+            border: 1px solid #074c66;
+            background: transparent !important;
+            color: #254e7a;
         }
     </style>
 
@@ -755,7 +811,7 @@
             </div>
 
             <div class="profile-card">
-                <div class="profile-img" style="background-image: url(img/9.jpg)"></div>
+                <div class="profile-img" style="background-image: url(img/6.jpg)"></div>
                 <div class="profile-info">
                     <h2>Gazzah Mohamed</h2>
                     <small>Ophtalmologiste</small>
@@ -775,52 +831,57 @@
 
             <div class="sidebar-menu">
                 <div class="menu-item">
-                    <a href="homeStaff">
+                    <a href="homedoctor">
                         <span class="las la-home"></span>
                         <span>Home</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="staff">
-                        <span class="las la-calendar-day"></span>
-                        <span>RDV</span>
-                    </a>
-                </div>
-
-
-                <div class="menu-item">
-                    <a href="PatientStaff">
+                    <a href="PatientDoctor">
                         <span class="las la-users"></span>
                         <span>Patient</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="messagesStaff">
-                        <span class="las la-comment-alt"></span>
+                    <a href="messagesdoctor">
+                        <span class="las la-comments"></span>
                         <span>Messages</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="planingStaff">
-                        <span class="las la-columns"></span>
+                    <a href="planingdoctor">
+                        <span class="las la-calendar"></span>
                         <span>Planing</span>
                     </a>
                 </div>
 
+                <div class="menu-item">
+                    <a href="finance">
+                        <span class="las la-coins"></span>
+                        <span>Finance</span>
+                    </a>
+                </div>
 
                 <div class="menu-item">
-                    <a href="taskStaff" class="active">
-                        <span class="las la-tasks"></span>
+                    <a href="StatDoctor">
+                        <span class="las la-square-root-alt"></span>
+                        <span>Statistiques</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="TasksDoctor">
+                        <span class="las la-file-invoice"></span>
                         <span>Tasks</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="SettingStaff">
-                        <span class="las la-cogs"></span>
+                    <a href="SettingDoctor" class="active">
+                        <span class="las la-tools"></span>
                         <span>Setting</span>
                     </a>
                 </div>
@@ -856,145 +917,57 @@
             <main>
                 <div class="page-header">
                     <h1>Have A Great Day</h1>
-                    <small>"Nothing ever comes to one,
-                        that is worth having,
-                        except as a result of hard work."</small>
+                    <small>"Almost nothing nee be said when you have eyes."</small>
                 </div>
+                <h1>Add Staff</h1>
                 <div class="main-home">
-                    <div class="main-home1">
-                        <!--Header-->
-                        <div class="header">
-
-                            <!--Stories-->
-                            <div class="stories-title">
-                                <h1>Note :</h1>
-                            </div>
-                            <!--Search-->
-                            <div class="search">
-                                <i class="ri-search-line"></i>
-                                <input type="text" placeholder="Search">
-                            </div>
-                            <!--Content-->
-                            <div class="header-content">
-                                <i class="ri-notification-4-fill"></i>
-                                <i class="ri-mail-unread-fill"></i>
-                            </div>
+                    <div class="card-body">
+                        <div id="style">
+                            <h3>Matricule Sociale :</h3>
+                            <h4>..........</h4>
                         </div>
-
-                        <!--Posts-->
-                        <div class="container">
-                            <div class="title-wrap">
-                                <span>Title: </span>
-                                <input type="text" class="title" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="line-wrap">
-                                <input type="text" class="line" />
-                            </div>
-                            <div class="btn1">
-                                <button class="btn">
-                                    save
-                                </button>
-                                <button class="btn">
-                                    send
-                                </button>
-                            </div>
+                        <div id="style">
+                            <h3>Prenom :</h3>
+                            <h4>..........</h4>
                         </div>
-                        <script>
-                            const lines = document.querySelectorAll(".line");
-                            const button = document.getElementsByClassName("btn")[0];
-                            let save = true;
-                            const saveEdit = () => {
-                                if (save) {
-                                    button.innerHTML = 'Edit';
-                                    save = false;
-                                } else {
-                                    button.innerHTML = 'Save';
-                                    save = true;
-                                }
-
-                                button.classList.toggle("edit-btn");
-                                lineControls();
-
-                            }
-
-                            const lineControls = () => {
-                                lines.forEach(line => {
-                                    if (!save) {
-                                        line.setAttribute("disable", true);
-                                    } else {
-                                        line.removeAttribute("disable");
-                                    }
-                                });
-                            }
-                            const setLinesMaxWidth = () => {
-
-                                lines.forEach(line => {
-                                    line.setAttribute("maxlength", line.offsetwidth / 12);
-                                });
-
-                            }
-                            setLinesMaxWidth();
-                            button.addEventListener("click", saveEdit);
-
-                            window.addEventListener("resize", setLinesMaxWidth);
-
-                        </script>
+                        <div id="style">
+                            <h3>Nom :</h3>
+                            <h4>..........</h4>
+                        </div>
+                        <div id="style">
+                            <h3>Cin :</h3>
+                            <h4>..........</h4>
+                        </div>
+                        <div id="style">
+                            <h3>Num :</h3>
+                            <h4>..........</h4>
+                        </div>
+                        <div id="style">
+                            <h3>Sexe :</h3>
+                            <h4>...</h4>
+                        </div>
+                        <div id="style">
+                            <h3>Age :</h3>
+                            <h4>..........</h4>
+                        </div>
+                        <div id="style">
+                            <h3>Adresse Email :</h3>
+                            <h4>...............</h4>
+                        </div>
+                        <div id="style">
+                            <h3>Adresse :</h3>
+                            <h4>....................</h4>
+                        </div>
+                        <div id="style">
+                            <h3>Niveau d'étude :</h3>
+                            <h4>....................</h4>
+                        </div>
+                        <div id="button">
+                            <button type="button" class="btn btn-primary">Add</button>
+                            <button type="button" id="Delete" class="btn btn-outline-primary">Delete</button>
+                        </div>
                     </div>
-                    <div class="quotes">
-                        <p class="p1">"The greatest glory in living lies
-                            not in never falling, but in rising
-                            every time we fall"
-                        </p>
-                        <p class="p2">"The greatest glory in living lies
-                            not in never falling, but in rising
-                            every time we fall"
-                        </p>
-                        <p class="p3">"The greatest glory in living lies
-                            not in never falling, but in rising
-                            every time we fall"
-                        </p>
-                        <p class="p4">"The greatest glory in living lies
-                            not in never falling, but in rising
-                            every time we fall"
-                        </p>
-                        <p class="p5">"The greatest glory in living lies
-                            not in never falling, but in rising
-                            every time we fall"
-                        </p>
-                    </div>
+                    <img id="image" src="img/home-img.svg" alt="">
                 </div>
 
         </div>

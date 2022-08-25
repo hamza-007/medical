@@ -206,15 +206,14 @@ section .contentBx .formBx .radio{
                 <h2>
                     Login
                 </h2>
-                <form method="post" action="">
+                <form method="POST" action="">
                     <div class="inputBx">
                         <span>Username</span>
-                        <input type="text" name="">
+                        <input type="email" name="email" >
                     </div>
-
                     <div class="inputBx">
                         <span>Password</span>
-                        <input type="password" name="">
+                        <input type="password" name="password">
                     </div>
 
                     <div class="inputBx">

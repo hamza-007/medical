@@ -59,9 +59,16 @@ Route::get('/PatientDoctor', function () {
 Route::get('/finance', function () {
     return view('doctor\finance');
 });
+Route::get('/addStaff', function () {
+    return view('doctor\addStaff');
+});
 Route::get('/messagesdoctor', function () {
     return view('doctor\messagesdoctor');
 });
+Route::get('/dossierPatient', function () {
+    return view('doctor\dossierPatient');
+});
+
 Route::get('/planingdoctor', function () {
     return view('doctor\planingdoctor');
 });
@@ -75,7 +82,7 @@ Route::get('/TasksDoctor', function () {
     return view('doctor\TasksDoctor');
 });
 
-Route::get('/confirmation', function () {
+Route::get('/confirm', function () {
     return view('patient\homePatient');
 });
 
@@ -134,4 +141,7 @@ Route::get('/Dossier', function () {
 });
 Route::get('/doctor/Dossier', function () {
     return view('staff\Dossier');
+});
+Route::get('/singin', function () {
+    return view('staff\homestaff');
 });

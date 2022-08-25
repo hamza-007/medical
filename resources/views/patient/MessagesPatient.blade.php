@@ -16,22 +16,23 @@
 
         <div class="sidebar">
             <div class="brand">
+                <small>DR </small>
+                <span class="las la-h-square"></span>
                 <h3>
-                    <span class="lab la-untappd"></span>
-                    Pacers
+                    OUSE
                 </h3>
             </div>
 
             <div class="profile-card">
-                <div class="profile-img" style="background-image: url(img/7.jpg)"></div>
+                <div class="profile-img" style="background-image: url(img/66.png)"></div>
                 <div class="profile-info">
-                    <h2>Heather Parker</h2>
-                    <small>Web Architect</small>
+                    <h2>Balghouthi Sirine</h2>
+                    <small>Patiente</small>
                 </div>
                 <div class="profile-action">
                     <a href="" class="btn btn-white">
-                        <span class="las la-coins"></span>
-                        $2,300
+                        <span class="las la-grin-stars"></span>
+                        Welcome
                     </a>
                 </div>
                 <div class="profile-icons">
@@ -43,7 +44,7 @@
 
             <div class="sidebar-menu">
                 <div class="menu-item">
-                    <a href="">
+                    <a href="homePatient" >
                         <span class="las la-home"></span>
                         <span>Home</span>
                     </a>
@@ -58,46 +59,40 @@
 
                 <div class="menu-item">
                     <a href="MessagesPatient" class="active">
-                        <span class="las la-comment-alt"></span>
+                        <span class="las la-comments"></span>
                         <span>Messages</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
                     <a href="PlaningPatient">
-                        <span class="las la-columns"></span>
+                        <span class="las la-calendar"></span>
                         <span>Planing</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
                     <a href="statPatient">
-                        <span class="las la-user-ninja"></span>
+                        <span class="las la-square-root-alt"></span>
                         <span>Statistiques</span>
                     </a>
                 </div>
-
-                <div class="menu-item">
-                    <a href="tasksPatient">
-                        <span class="las la-tasks"></span>
-                        <span>RQ</span>
-                    </a>
-                </div>
-
-                <div class="menu-item">
+            <div class="menu-item">
                     <a href="SettingPatient">
-                        <span class="las la-cogs"></span>
+                        <span class="las la-tools"></span>
                         <span>Setting</span>
                     </a>
                 </div>
             </div>
             <div class="sidebar-card">
                 <h3>Hello Parker</h3>
-                <p>You are yet to complete certain tasks that are assigned to you and
-                    haven't update the product manager of your current status quo
-                </p>
-                <a href="" class="btn btn-block btn-white">Get started</a>
-            </div>
+                <p>Happiness does not come
+                    from doing easy work but
+                    from the afterglow of
+                    satisfaction that comes after
+                    the achievement of a difficult
+                    task that demanded our best.</p>
+                         </div>
         </div>
         <div class="main-content">
             <header>
@@ -110,16 +105,16 @@
                     <span class="las la-comment-alt"></span>
                     <span class="las la-bell"></span>
                     <div class="head-avatar">
-                        <div class="avatar" style="background-image: url(img/1.jpeg)"></div>
-                        <span>John Snow</span>
+                        <div class="avatar" style="background-image: url(img/emoji.png)"></div>
+                        <span>Welcome</span>
                     </div>
                 </div>
             </header>
 
             <main>
                 <div class="page-header">
-                    <h1>Messages</h1>
-                    <small>“Take care of your body. It’s the only place you have to live.”</small>
+                    <h1>Have A Great Day</h1>
+                    <small>"Keep smiling, because life is a beautiful thing and there's so much to smile about."</small>
                 </div>
 
                 <div class="grid-2">

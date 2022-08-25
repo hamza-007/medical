@@ -75,7 +75,7 @@
                             <li><a href="#review">review</a></li>
 
                             <li><a href="#post">post</a></li>
-                            <li><a href="#contact">RDV</a></li>
+
                         </ul>
                     </nav>
 
@@ -316,50 +316,6 @@
 
             <!-- contact section starts  -->
 
-            <section class="contact" id="contact">
-
-                <div class="container min-vh-100">
-
-                    <div class="row justify-content-center">
-
-                        <h1 class="heading"><span>'</span> Book RDV <span>'</span></h1>
-
-                        <div class="col-md-10" data-aos="flip-down">
-
-                            <form action="">
-
-                                <div class="inputBox">
-                                    <input type="text" placeholder="full name">
-                                    <input type="number" placeholder="phone">
-                                </div>
-
-                                <div class="inputBox">
-                                    <input type="email" placeholder="your email">
-                                    <select name="" id="">
-                                        <option value="" disabled selected>Book RDV
-                                        </option>
-                                        <option value="09-11 am">09-11 am</option>
-                                        <option value="11-03 pm">11-03 pm</option>
-                                        <option value="03-06 pm">03-06 pm</option>
-                                        <option value="06-09 pm">06-09 pm</option>
-                                    </select>
-                                </div>
-
-                                <textarea name="" id="" cols="30" rows="10" placeholder="message ( optional )"></textarea>
-
-                                <input type="submit" name="" id="" value="submit"
-                                    class="button">
-
-                            </form>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
             <!-- contact section ends -->
 
             <!-- post section starts  -->
@@ -372,7 +328,7 @@
 
                     <div class="box-container">
 
-                        <div class="box" data-aos="fade-right">
+                                                                        <div class="box" data-aos="fade-right">
                             <img src="img/img2.jpg" alt="">
                             <div class="content">
                                 <span>jan 5, 2021</span>

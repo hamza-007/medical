@@ -776,7 +776,7 @@
             </div>
 
             <div class="profile-card">
-                <div class="profile-img" style="background-image: url(img/6.jpg)"></div>
+                <div class="profile-img" style="background-image: url(img/66.png)"></div>
                 <div class="profile-info">
                     <h2>Balghouthi Sirine</h2>
                     <small>Patiente</small>
@@ -829,14 +829,6 @@
                         <span>Statistiques</span>
                     </a>
                 </div>
-
-                <div class="menu-item">
-                    <a href="tasksPatient">
-                        <span class="las la-file-invoice"></span>
-                        <span>Tasks</span>
-                    </a>
-                </div>
-
                 <div class="menu-item">
                     <a href="SettingPatient" class="active">
                         <span class="las la-tools"></span>
@@ -852,7 +844,6 @@
                     satisfaction that comes after
                     the achievement of a difficult
                     task that demanded our best.</p>
-                <a href="" class="btn btn-block btn-white"><u>Get started</a>
             </div>
         </div>
         <div class="main-content">

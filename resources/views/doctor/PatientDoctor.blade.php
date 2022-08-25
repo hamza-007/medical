@@ -185,7 +185,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <a href="" class="btn btn-primary">Contact</a>
+                                            <a href="dossierPatient" class="btn btn-primary">Contact</a>
                                         </td>
                                     </tr>
 
@@ -216,7 +216,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <a href="" class="btn btn-primary">Contact</a>
+                                            <a href="dossierPatient" class="btn btn-primary">Contact</a>
                                         </td>
                                     </tr>
 
@@ -278,7 +278,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <a href="" class="btn btn-primary">Contact</a>
+                                            <a href="dossierPatient" class="btn btn-primary">Contact</a>
                                         </td>
                                     </tr>
                                 </tbody>

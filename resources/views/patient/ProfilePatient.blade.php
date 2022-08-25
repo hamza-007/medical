@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-
-    <link href="{{url('css/styleProfilePatient.css')}}" rel="stylesheet">
+    <link href="{{url('css/profile.css')}}" rel="stylesheet">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
@@ -25,7 +24,7 @@
             </div>
 
             <div class="profile-card">
-                <div class="profile-img" style="background-image: url(img/6.jpg)"></div>
+                <div class="profile-img" style="background-image: url(img/66.png)"></div>
                 <div class="profile-info">
                     <h2>Balghouthi Sirine</h2>
                     <small>Patiente</small>
@@ -80,13 +79,6 @@
                 </div>
 
                 <div class="menu-item">
-                    <a href="tasksPatient">
-                        <span class="las la-file-invoice"></span>
-                        <span>Tasks</span>
-                    </a>
-                </div>
-
-                <div class="menu-item">
                     <a href="SettingPatient">
                         <span class="las la-tools"></span>
                         <span>Setting</span>
@@ -101,7 +93,6 @@
                     satisfaction that comes after
                     the achievement of a difficult
                     task that demanded our best.</p>
-                <a href="" class="btn btn-block btn-white"><u>Get started</a>
             </div>
         </div>
         <div class="main-content">
@@ -127,162 +118,221 @@
                     <small>"Keep smiling, because life is a beautiful thing and there's so much to smile about."</small>
                 </div>
 
+
                 <div class="grid-2">
                     <div class="card team-progress">
                         <div class="card-hear">
                             <div class="team-head">
-                                <img src="img/check-list.png" alt="">
-                                <h3>Doctors List</h3>
-                            </div>
-                        </div>
-                        <div class="card-body1">
-                            <div class="dossier">
-                                <a href="doctor\Dossier">
-                                    <img src="img/dental-care.png" alt="">
-                                    <h3>  Dentist</h3>
-                                </a>
-                            </div>
-                            <div class="dossier">
-                                <a href="#">
-                                    <img src="img/heart (1).png" alt="">
-                                    <h3>Cardiologist </h3>
-                                </a>
-                            </div>
-                            <div class="dossier">
-                                <a href="#">
-                                    <img src="img/skin (1).png" alt="">
-                                    <h3>Dermatologist </h3>
-                                </a>
-
-                            </div>
-                            <div class="dossier">
-                                <a href="#">
-                                    <img src="img/11.jpeg" alt="">
-                                    <h3>Ophthalmolo</h3>
-                                </a>
-
-                            </div>
-                            <div class="dossier">
-                                <a href="doctor\Dossier">
-                                    <img src="img/pediatrician.png" alt="">
-                                    <h3>Pediatrician </h3>
-                                </a>
-                            </div>
-                            <div class="dossier">
-                                <a href="#">
-                                    <img src="img/pediatrician.png" alt="">
-                                    <h3>Pediatrician </h3>
-                                </a>
-                            </div>
-                            <div class="dossier">
-                                <a href="#">
-                                    <img src="img/pediatrician.png" alt="">
-                                    <h3>Pediatrician </h3>
-                                </a>
-                            </div>
-                            <div class="dossier">
-                                <a href="#">
-                                    <img src="img/pediatrician.png" alt="">
-                                    <h3>Pediatrician </h3>
-                                </a>
-                            </div>
-                            <div class="dossier">
-                                <a href="#">
-                                    <img src="img/pediatrician.png" alt="">
-                                    <h3>Pediatrician </h3>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="card competitors">
-                        <div class="card-head">
-                            <div class="team-head">
-                                <img src="img/telephone-call (1).png" alt="">
-                                <div>
-                                    <h4>Contact</h4>
-                                    <small>More than 400+ new members</small>
-                                </div>
+                                    <h3>Medicines Schedule</h3>
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="compete-info">
-                                <div>
-                                    <img src="img/heart (1).png" alt="">
-                                    <div class="compete-details">
-                                        <h4>Cardio</h4>
-                                        <small><strong> Badra</small>
-                                        <p><span class="las la-map-marked-alt"></span><a href=""> Code resource</a></p>
-                                    </div>
-                                </div>
-                                <div class="compete-sales">
-                                    <h3>77248900</h3>
-                                </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th> </th>
+                                        <th>Drug name</th>
+                                        <th>Timing</th>
+                                        <th >weekly Schedule</th>
+                                        <th>Dally frequency</th>
+                                        <th>Progress</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/pills.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Capsules</td>
+                                        <td>After Eating</td>
+                                        <td id="day">
+                                            <div id="sat">S</div>
+                                            <div id="sun">S</div>
+                                            <div id="mon">M</div>
+                                            <div id="tue">T</div>
+                                            <div id="wed">W</div>
+                                            <div id="thu">T</div>
+                                            <div id="fri">F</div>
+                                        </td>
+                                        <td >Two times a day</td>
+                                        <td>
+                                            <div class="team-progress">
+                                                <h4>85%</h4>
+                                                <div class="progress-bar">
+                                                    <div class="indicator success" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td id="action">
+                                            <a href="" class="btn btn-skip" >Skip</a>
+                                            <a href="" class="btn btn-primary">Done</a>
+                                        </td>
+                                    </tr>
 
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/syrup.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Syrup</td>
+                                        <td>After Eating</td>
+                                        <td id="day">
+                                            <div id="sat">S</div>
+                                            <div id="sun">S</div>
+                                            <div id="mon">M</div>
+                                            <div id="tue">T</div>
+                                            <div id="wed">W</div>
+                                            <div id="thu">T</div>
+                                            <div id="fri">F</div>
+                                        </td>
+                                        <td>Two times a day</td>
+                                        <td>
+                                            <div class="team-progress">
+                                                <h4>85%</h4>
+                                                <div class="progress-bar">
+                                                    <div class="indicator success" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td id="action">
+                                            <a href="" class="btn btn-skip" >Skip</a>
+                                            <a href="" class="btn btn-primary">Done</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/injection.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Injection</td>
+                                        <td>After Eating</td>
+                                        <td id="day">
+                                            <div id="sat">S</div>
+                                            <div id="sun">S</div>
+                                            <div id="mon">M</div>
+                                            <div id="tue">T</div>
+                                            <div id="wed">W</div>
+                                            <div id="thu">T</div>
+                                            <div id="fri">F</div>
+                                        </td>
+                                        <td>Two times a day</td>
+                                        <td>
+                                            <div class="team-progress">
+                                                <h4>85%</h4>
+                                                <div class="progress-bar">
+                                                    <div class="indicator success" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td id="action">
+                                            <a href="" class="btn btn-skip" >Skip</a>
+                                            <a href="" class="btn btn-primary">Done</a>
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card team-progress">
+                        <div class="card-hear">
+                            <div class="team-head">
+                                    <h3>Upcoming Appointments</h3>
                             </div>
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th> </th>
+                                        <th>Doctor name</th>
+                                        <th>Category</th>
+                                        <th>Hospital name</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Location</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/skin (1).png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Brain C. Bryant</td>
+                                        <td>Dermatologist</td>
+                                        <td>Stanford Hospital</td>
+                                        <td>08-01-2020</td>
+                                        <td >6:30 PM</td>
+                                        <td >Kairouan</td>
+                                        <td id="action">
+                                            <a href="" class="btn btn-skip" >Cancel</a>
+                                            <a href="" class="btn btn-primary">Re-Schedule</a>
+                                        </td>
+                                    </tr>
 
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/dental-care.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Michael N. Marriott</td>
+                                        <td>Dentist</td>
+                                        <td>Lifecare Hospital</td>
+                                        <td>29-02-2020</td>
+                                        <td >4:15 PM</td>
+                                        <td >Sousse</td>
+                                        <td id="action">
+                                            <a href="" class="btn btn-skip" >Cancel</a>
+                                            <a href="" class="btn btn-primary">Re-Schedule</a>
+                                        </td>
+                                    </tr>
 
-                            <div class="compete-info">
-                                <div>
-                                    <img src="img/laboratory.png" alt="">
-                                    <div class="compete-details">
-                                        <h4>laboratory</h4>
-                                        <small>Narjes Boudidah</small>
-                                        <p><span class="las la-map-marked-alt"></span><a href=""> Code resource</a></p>
-                                    </div>
-                                </div>
-                                <div class="compete-sales">
-                                    <h3>77245900</h3>
-                                </div>
-                            </div>
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/pediatrician.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Bradley S. Bartiett</td>
+                                        <td>Pediatrician</td>
+                                        <td>Stanford Hospital</td>
+                                        <td>21-01-2020</td>
+                                        <td >8:00 PM</td>
+                                        <td >Kairouan</td>
+                                        <td id="action">
+                                            <a href="" class="btn btn-skip" >Cancel</a>
+                                            <a href="" class="btn btn-primary">Re-Schedule</a>
+                                        </td>
+                                    </tr>
 
-
-
-                            <div class="compete-info">
-                                <div>
-                                    <img src="img/pharmacy.png" alt="">
-                                    <div class="compete-details">
-                                        <h4>Pharmacy</h4>
-                                        <small>Aboudi</small>
-                                        <p><span class="las la-map-marked-alt"></span><a href=""> Code resource</a></p>
-                                    </div>
-                                </div>
-                                <div class="compete-sales">
-                                    <h3>77852900</h3>
-                                </div>
-                            </div>
-
-
-                            <div class="compete-info">
-                                <div>
-                                    <img src="img/pediatrician.png" alt="">
-                                    <div class="compete-details">
-                                        <h4>pediatrician</h4>
-                                        <small>Mohamed Balghouthi</small>
-                                        <p><span class="las la-map-marked-alt"></span><a href=""> Code resource</a></p>
-                                    </div>
-                                </div>
-                                <div class="compete-sales">
-                                    <h3>77888999</h3>
-                                </div>
-
-                            </div>
-
-                            <div class="compete-info">
-                                <div>
-                                    <img src="img/dental-care.png" alt="">
-                                    <div class="compete-details">
-                                        <h4>Dentist</h4>
-                                        <small>Lamya Badra</small>
-                                        <p><span class="las la-map-marked-alt"></span><a href=""> Code resource</a></p>
-                                    </div>
-                                </div>
-                                <div class="compete-sales">
-                                    <h3>77777777</h3>
-                                </div>
-                            </div>
-
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

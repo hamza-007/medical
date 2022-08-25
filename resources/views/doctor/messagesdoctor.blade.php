@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message</title>
-
+    <title>Admin Dashboard Pacers</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <style>
-         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root {
-    --color-main: #89c7d6;
-    --color-secondary: #5fa4a7;
-    --bg-body: #eae80;
-    --main-accent: #4793a7;
-    --main-text: #036f7e;
+    --color-main: #254e7a;
+    --color-secondary: #85c1e5;
+    --bg-body:#f7f3ea;
+    --main-accent: #254e7a;
+    --main-text: #6ca5c7;
     --success: #28a745;
     --danger: #dc3545;
-    --shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    --shadow: rgba(0,0,0,0.15) 0px 2px 8px;
 }
 
-* {
+*{
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
     list-style-type: none;
@@ -31,35 +31,35 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     color: var(--main-text);
     background: var(--bg-body);
     overflow-x: hidden;
 }
 
-#menu-toggle {
+#menu-toggle{
     display: none;
 }
 
-#menu-toggle:checked~.sidebar {
+#menu-toggle:checked ~ .sidebar{
     display: none;
 }
 
-#menu-toggle:checked .main-content .engage-card {
+#menu-toggle:checked .main-content .engage-card{
     max-width: 698px;
 }
 
-#menu-toggle:checked .main-content .emails-card {
+#menu-toggle:checked .main-content .emails-card{
     max-width: 344px;
 }
 
-.page-wrapper {
+.page-wrapper{
     width: 93%;
     margin: auto;
     display: flex;
 }
 
-.page-wrapper::before {
+.page-wrapper::before{
     content: "";
     width: 100%;
     max-width: 100%;
@@ -69,24 +69,36 @@ body {
     top: 0;
     background: var(--color-main);
     z-index: -1;
-    border-radius: 0px 0px 0px 100px;
+    border-radius: 0px 0px 0px 100px ;
 }
-
-.sidebar {
+.sidebar{
     width: 250px;
     margin-left: 40px;
 }
-
-.brand {
+.brand{
     height: 70px;
     display: flex;
     align-items: center;
     padding-left: 1rem;
 }
 
-.brand h3 {
-    font-size: 1.8rem;
+.brand h3{
+    font-size: 1.7rem;
     color: #fff;
+    letter-spacing: .3rem;
+    margin-top: 2rem;
+}
+
+.brand span{
+    font-size: 48px;
+    color: #fff;
+    margin-top: 2rem;
+}
+.brand small{
+    font-size: .9rem;
+    color: #fff;
+    letter-spacing: .1rem;
+    margin-top: 1rem;
 }
 
 .profile-card {
@@ -96,16 +108,17 @@ body {
 
 .profile-img {
     height: 100px;
-    width: 100px;
+    width:100px;
     border-radius: 50%;
     margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 1.8rem;
     margin-bottom: 1.3rem;
+    background-color: #fff;
 }
 
-.profile-info {
+.profile-info{
     color: #fff;
 }
 
@@ -134,7 +147,7 @@ body {
 }
 
 .btn-white {
-    background: #fff;
+    color: #fff !important;
 }
 
 .btn-main {
@@ -181,7 +194,7 @@ body {
     font-size: 1.1rem;
 }
 
-.menu-item a span:first-child {
+.menu-item a span:first-child{
     font-size: 2rem;
     margin-bottom: .4rem;
 }
@@ -197,9 +210,9 @@ body {
 .sidebar-card {
     padding: 1rem;
     border-radius: 10px;
-    background: var(--color-secondary);
+    background: #85c1e5;
     margin: 2rem 0rem;
-    color: #fff;
+    color: #fff !important;
 }
 
 .sidebar-card h3 {
@@ -218,7 +231,7 @@ body {
     text-align: center;
     font-weight: 600;
     color: var(--main-text);
-    display: block;
+    display:block;
     font-size: 1.1rem;
 }
 
@@ -244,6 +257,7 @@ header label {
 .head-icons {
     display: flex;
     align-items: center;
+    margin: 1rem;
 }
 
 .head-icons span {
@@ -251,12 +265,44 @@ header label {
     display: inline-block;
     font-size: 1.2rem;
 }
+.head-icons input{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: #aae4e6;
+
+}
+.head-icons-search {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 1rem;
+    margin-top: -0.5rem;
+}
+
+.head-icons-search span {
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+    color: #6ca5c7;
+}
+.head-icons-search input{
+    height: 100%;
+    width: 30rem;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
 
 .head-avatar {
     display: flex;
     align-items: center;
     border-radius: 20px;
-    background: #aae4e6;
+    color: var(--main-accent);
+    background:#fff;
 }
 
 .head-avatar .avatar {
@@ -278,6 +324,11 @@ header label {
     color: #fff;
     margin: 1rem 0rem;
 }
+.page-header h2{
+    font-size: 30px;
+    color: #6ca5c7;
+    margin: 1rem 0rem;
+}
 
 .analytics {
     display: grid;
@@ -290,30 +341,33 @@ header label {
     background: #fff;
     border-radius: 10px;
     box-shadow: var(--shadow);
+    padding: 1.5rem;
 }
-
 .card-head {
     font-size: 1rem;
     color: #555;
     font-weight: 600;
-    padding: 1rem 2rem;
+    padding: -1rem -1rem;
     border-bottom: 1px solid #eee;
+    margin: 2rem;
 }
 
 .card-body {
     padding: 1.5rem 2rem;
+    background: #dae4ec;
+    border-radius: .5rem;
 }
 
-.card-footer {
+.card-footer{
     padding: 1rem 2rem;
 }
 
 .engage-card,
-.emails-card {
+.emails-card{
     min-width: 100%;
 }
 
-.emails-card .card-body {
+.emails-card .card-body{
     padding: .3rem;
 }
 
@@ -321,7 +375,7 @@ header label {
     padding-top: 1rem 0rem;
 }
 
-.emails-info {
+.emails-info{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -378,8 +432,8 @@ table tr:last-child {
     border-bottom: none;
 }
 
-table tr td,
-table tr th {
+table tr td ,
+table tr th{
     padding: 1.2rem 1rem;
 }
 
@@ -389,8 +443,8 @@ table tr th {
     font-size: .9rem;
 }
 
-table small {
-    font-weight: 600;
+table small{
+    font-weight:600 ;
 }
 
 table h4,
@@ -407,13 +461,14 @@ table h3,
     grid-template-columns: 65% auto;
     grid-gap: 2rem;
     margin-bottom: 3.5rem;
+    width: 65rem;
 }
-
+.team-img
 .team-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .team-head small {
@@ -425,10 +480,13 @@ table h3,
     display: inline-block;
     height: 38px;
     padding: .5rem 2rem;
-    border-radius: 8px;
+    border-radius: 18px;
     background: #efefef;
     border: none;
     outline: none;
+    margin-left: 27rem;
+    margin-bottom: .5rem;
+    margin-top: -2rem;
 }
 
 .team-info {
@@ -437,15 +495,15 @@ table h3,
 }
 
 .team-img {
-    height: 50px;
-    width: 50px;
-    border-radius: 8px;
-    background: var(--bg-body);
-    margin-right: .7rem;
+    height: 6rem;
+    width: 6rem;
+    background: #fff;
+    border-radius: 18px;
     padding: .8rem;
+    margin-left: .1rem;
 }
 
-.team-progress>h4 {
+.team-progress > h4 {
     color: var(--main-text);
     margin-bottom: .5rem;
 }
@@ -479,160 +537,84 @@ table h3,
     background: var(--color-secondary);
 }
 
-.compete-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.compete-details{
+    width: 12rem;
+    display:inline-block;
     margin-bottom: 1.3rem;
+    background: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin-right:.1rem;
 }
 
-.compete-info>div:first-child {
-    display: flex;
+.compete-details> div:first-child {
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
     margin-right: .7rem;
 }
 
-.compete-info img {
-    width: 100px;
-    border-radius: 10px;
+.compete-details span #text {
+    color: #254e7a;
+}
+.compete-details span {
+    display: flex;
+    margin-top: .7rem;
+    margin-bottom: .6rem ;
+}
+.compete-details img {
+    width: 27px;
+    height: 32px;
+    border-radius: 1rem;
     margin-right: .7rem;
+    margin-top: -0.5rem;
 }
 
 .competitors .card-body {
     padding: 1rem;
 }
 
-.compete-details small {
-    display: inline-block;
-    margin-bottom: .3rem;
+.compete-details a {
+    color: var(--main-text);
 }
 
-.compete-details p>a {
+.compete-details h5 {
+    margin: .5rem;
+    font-size: 15px;
+}
+.compete-details h5 > a {
     color: var(--color-main);
     font-weight: 600;
 }
-
-.compete-sales {
-    text-align: right;
+.compete-details .info1{
+    margin-left: 7rem;
+    display: inline-block;
 }
-
-.compete-sales span {
-    font-size: .9rem;
-    font-weight: 600;
-}
-
-.compete-sales h3 {
-    color: #444 !important;
-    font-size: 1.04rem;
-}
-
 @media only screen and (max-width: 1280px) {
     .sidebar {
         display: none;
     }
 
-    #menu-toggle:checked~.sidebar {
+    #menu-toggle:checked ~ .sidebar {
         display: block;
     }
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 980px){
     .main-content {
         padding: 0 20px;
         flex: 1;
     }
 
-    .analytics,
-    .grid-2 {
+    .analytics , .grid-2 {
         grid-template-columns: 100%;
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px){
     .page-wrapper::before {
         min-width: 640px;
     }
-}
-
-main {
-    margin-top: 85px;
-    padding: 1rem 1.5rem;
-    padding-right:0.5rem ;
-    background: #e9ecb5;
-    min-height: calc(100vh - 90px);
-    border-radius: 10px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
-    margin-top: 1rem;
-}
-
-.card-single {
-    display: inline-block;
-    justify-content: space-between;
-    background: rgb(255, 255, 255);
-    padding: 2rem;
-    border-radius: 1rem;
-    width: 50rem;
-    height: 4rem;
-}
-
-
-.card-single .info{
-    margin-top: -2.5rem;
-    margin-left: 25rem;
-}
-
-
-.card-single img {
-    justify-content: center;
-    height: 3rem;
-    width: 3rem;
-    margin-left: -1rem;
-    margin-top: -1.5rem;
-    border-radius: 20rem;
-}
-
-
-.card-single #text {
-    font-size: 16px;
-    color: #000;
-    margin-left: 1rem;
-    top: -1.5rem;
-}
-
-.card-single .icon {
-    font-size: 24px;
-    justify-content: space-between;
-    margin-left: 14rem;
-    margin-top: -2rem;
-}
-
-.card-single .icon a {
-    color: #00987f;
-}
-
-.card-single .icon a:hover {
-    font-size: 32px;
-    color: #016f5d;
-}
-
-.card-single:last-child h1,
-.card-single:last-chil div:first-child span,
-.card-single:last-chil div:last-child span {
-    color: #fff;
-}
-#text1 {
-    color: #fff;
-    font-size: 2.5rem;
-    margin-left: 30.1rem;
-    display: flex;
-    margin-top: 2rem;
-    margin-bottom: -3rem;
 }
     </style>
 </head>
@@ -643,22 +625,23 @@ main {
 
         <div class="sidebar">
             <div class="brand">
+                <small>DR </small>
+                <span class="las la-h-square"></span>
                 <h3>
-                    <span class="lab la-untappd"></span>
-                    Pacers
+                    OUSE
                 </h3>
             </div>
 
             <div class="profile-card">
                 <div class="profile-img" style="background-image: url(img/6.jpg)"></div>
                 <div class="profile-info">
-                    <h2>Heather Parker</h2>
-                    <small>Web Architect</small>
+                    <h2>GAzzah Mohamed</h2>
+                    <small>Ophtalmologiste</small>
                 </div>
                 <div class="profile-action">
                     <a href="" class="btn btn-white">
-                        <span class="las la-coins"></span>
-                        $2,300
+                        <span class="las la-grin-stars"></span>
+                        Welcome
                     </a>
                 </div>
                 <div class="profile-icons">
@@ -670,14 +653,14 @@ main {
 
             <div class="sidebar-menu">
                 <div class="menu-item">
-                    <a href="">
+                    <a href="homedoctor">
                         <span class="las la-home"></span>
                         <span>Home</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="">
+                    <a href="PatientDoctor">
                         <span class="las la-users"></span>
                         <span>Patient</span>
                     </a>
@@ -691,46 +674,49 @@ main {
                 </div>
 
                 <div class="menu-item">
-                    <a href="">
+                    <a href="planingdoctor">
                         <span class="las la-calendar"></span>
                         <span>Planing</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="">
+                    <a href="finance">
                         <span class="las la-coins"></span>
                         <span>Finance</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="">
+                    <a href="StatDoctor">
                         <span class="las la-square-root-alt"></span>
                         <span>Statistiques</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="">
+                    <a href="TasksDoctor">
                         <span class="las la-file-invoice"></span>
                         <span>Tasks</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="">
+                    <a href="SettingDoctor">
                         <span class="las la-tools"></span>
                         <span>Setting</span>
                     </a>
                 </div>
             </div>
             <div class="sidebar-card">
-                <h3>Hello Parker</h3>
-                <p>You are yet to complete certain tasks that are assigned to you and
-                    haven't update the product manager of your current status quo
-                </p>
-                <a href="" class="btn btn-block btn-white">Get started</a>
+                <h3>Hello Doctor</h3>
+                <p>Happiness does not come
+                    from doing easy work but
+                    from the afterglow of
+                    satisfaction that comes after
+                    the achievement of a difficult
+                    task that demanded our best.</p>
+                <a href="" class="btn btn-block btn-white"><u>Get started</a>
             </div>
         </div>
         <div class="main-content">
@@ -745,150 +731,293 @@ main {
                     <span class="las la-bell"></span>
                     <div class="head-avatar">
                         <div class="avatar" style="background-image: url(img/1.jpeg)"></div>
-                        <span>John Snow</span>
+                        <span>Dr Gazzah</span>
                     </div>
                 </div>
             </header>
 
             <main>
-                <div class="cards">
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile1.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-eye"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile2.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-check-circle"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile3.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-eye"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile4.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-check-circle"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile5.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-eye"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile6.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-check-circle"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile7.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-eye"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile8.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-check-circle"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile8.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-eye"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile9.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-check-circle"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile10.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-eye"></span>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-
-                        <div>
-                            <img src="img/profile11.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <span id="text"> Nous utilisons ces cookies pour recueil...</span>
-                           <span class="las la-check-circle"></span>
-                        </div>
-                    </div>
-
+                <div class="page-header">
+                    <h1>Have A Great Day</h1>
+                    <small>"Almost nothing nee be said when you have eyes."</small>
+                    <h2>Messages</h2>
                 </div>
+                <div class="grid-2">
+                    <div class="card team-progress">
+                        <div class="head-icons-search">
+                            <a href="#"><span class="las la-search"></span></a>
+                            <input type="search" placeholder="search here">
+                        </div>
+                        <div class="card-body">
 
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/femme.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>Sirine Balghouthi</h4>
+                                                <small>Patiente</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-primary">Contact</a>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/gender.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>Ahmed Balghouthi</h4>
+                                                <small>Patient</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-primary">Contact</a>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/dental-care.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>Sirine Balghouthi</h4>
+                                                <small>Dentiste</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-primary">Contact</a>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/femme.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>Narjes Boudidah</h4>
+                                                <small>Patiente</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-primary">Contact</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/staff.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>Faten Balghouthi</h4>
+                                                <small>Staff</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-primary">Contact</a>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/pediatrician.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>Sirine Balghouthi</h4>
+                                                <small>Pediatrician</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-primary">Contact</a>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/dental-care.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>sirine balghouthi</h4>
+                                                <small>Dentiste</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-primary">Contact</a>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="img/heart (1).png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>sirine Balghouthi</h4>
+                                                <small>Cardiologue</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-primary">Contact</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="card competitors">
+                        <div class="card-head">
+                            <div class="team-head">
+                                <div>
+                                    <h4>Contacts</h4>
+                                    <small>Person with the same disease</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="compete-details">
+
+                                <span><img src="img/heart (1).png" alt="">
+                                    <h4 id="text">Amor Kenani</h4>
+                                </span>
+                                <a href="#">
+                                    <h5><i class="las la-id-card"></i> Cardiologue</h5>
+                                </a>
+                                <a href="#">
+                                    <h5><i class="las la-comment-alt"></i> Contact</h5>
+                                </a>
+
+
+                            </div>
+
+                            <div class="compete-details">
+
+                                <span><img src="img/skin (1).png" alt="">
+                                    <h4 id="text">Amor Kenani</h4>
+                                </span>
+                                <a href="#">
+                                    <h5><i class="las la-id-card"></i> Dermatologue</h5>
+                                </a>
+                                <a href="#">
+                                    <h5><i class="las la-comment-alt"></i> Contact</h5>
+                                </a>
+
+
+                            </div>
+
+                            <div class="compete-details">
+
+                                <span><img src="img/pharmacy.png" alt="">
+                                    <h4 id="text">Amor Kenani</h4>
+                                </span>
+                                <a href="#">
+                                    <h5><i class="las la-id-card"></i> Pharmacy</h5>
+                                </a>
+                                <a href="#">
+                                    <h5><i class="las la-comment-alt"></i> Contact</h5>
+                                </a>
+
+
+                            </div>
+
+                            <div class="compete-details">
+
+                                <span><img src="img/laboratory.png" alt="">
+                                    <h4 id="text">Amor Kenani</h4>
+                                </span>
+                                <a href="#">
+                                    <h5><i class="las la-id-card"></i> Laboratory</h5>
+                                </a>
+                                <a href="">
+                                    <h5><i class="las la-comment-alt"></i> Contact</h5>
+                                </a>
+
+
+                            </div>
+
+                            <div class="compete-details">
+
+                                <span><img src="img/dental-care.png" alt="">
+                                    <h4 id="text">Amor Kenani</h4>
+                                </span>
+                                <a href="#">
+                                    <h5><i class="las la-id-card"></i> Dentiste</h5>
+                                </a>
+                                <a href="#">
+                                    <h5><i class="las la-comment-alt"></i> Contact</h5>
+                                </a>
+
+                            </div>
+
+                            <div class="compete-details">
+
+                                <span><img src="img/heart (1).png" alt="">
+                                    <h4 id="text">Amor Kenani</h4>
+                                </span>
+                                <a href="#">
+                                    <h5><i class="las la-id-card"></i> Cardiologue</h5>
+                                </a>
+                                <a href="#">
+                                    <h5><i class="las la-comment-alt"></i> Contact</h5>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
             </main>
         </div>
     </div>
+
 </body>
 
 </html>

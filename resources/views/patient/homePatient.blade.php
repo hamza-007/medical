@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Patient</title>
-
     <link href="{{url('css/styleHomePatient.css')}}" rel="stylesheet">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -25,7 +24,7 @@
             </div>
 
             <div class="profile-card">
-                <div class="profile-img" style="background-image: url(img/6.jpg)"></div>
+                <div class="profile-img" style="background-image: url(img/66.png)"></div>
                 <div class="profile-info">
                     <h2>Balghouthi Sirine</h2>
                     <small>Patiente</small>
@@ -79,12 +78,6 @@
                     </a>
                 </div>
 
-                <div class="menu-item">
-                    <a href="tasksPatient">
-                        <span class="las la-file-invoice"></span>
-                        <span>Tasks</span>
-                    </a>
-                </div>
 
                 <div class="menu-item">
                     <a href="SettingPatient">
@@ -101,8 +94,7 @@
                     satisfaction that comes after
                     the achievement of a difficult
                     task that demanded our best.</p>
-                <a href="" class="btn btn-block btn-white"><u>Get started</a>
-            </div>
+                        </div>
         </div>
         <div class="main-content">
             <header>

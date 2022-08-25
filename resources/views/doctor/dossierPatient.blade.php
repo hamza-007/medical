@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home staff</title>
-    <link href="{{url('css/dossier.css')}}" rel="stylesheet">
+    <title>Dossier</title>
+    <link href="{{url('css/styledossierpatient.css')}}" rel="stylesheet">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
@@ -22,12 +22,11 @@
                     OUSE
                 </h3>
             </div>
-
             <div class="profile-card">
-                <div class="profile-img" style="background-image: url(img/9.jpg)"></div>
+                <div class="profile-img" style="background-image: url(img/6.jpg)"></div>
                 <div class="profile-info">
-                    <h2>Balghouthi Latifa</h2>
-                    <small>Secrétaire Médicale</small>
+                    <h2>Gazzah Mohamed</h2>
+                    <small>Ophtalmologiste</small>
                 </div>
                 <div class="profile-action">
                     <a href="" class="btn btn-white">
@@ -36,67 +35,71 @@
                     </a>
                 </div>
                 <div class="profile-icons">
-                    <span class="las la-hospital"></span>
-                    <span class="las la-ambulance"></span>
-                    <span class="las la-phone-volume"></span>
-
+                    <span class="las la-user"></span>
+                    <span class="las la-comment-alt"></span>
+                    <span class="las la-file-invoice"></span>
                 </div>
             </div>
 
             <div class="sidebar-menu">
                 <div class="menu-item">
-                    <a href="homeStaff">
+                    <a href="">
                         <span class="las la-home"></span>
                         <span>Home</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="staff">
-                        <span class="las la-calendar-day"></span>
-                        <span>RDV</span>
-                    </a>
-                </div>
-
-
-                <div class="menu-item">
-                    <a href="PatientStaff" class="active">
+                    <a href="" class="active">
                         <span class="las la-users"></span>
                         <span>Patient</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="messagesStaff">
-                        <span class="las la-comment-alt"></span>
+                    <a href="">
+                        <span class="las la-comments"></span>
                         <span>Messages</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="planingStaff">
-                        <span class="las la-columns"></span>
+                    <a href="">
+                        <span class="las la-calendar"></span>
                         <span>Planing</span>
                     </a>
                 </div>
 
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-coins"></span>
+                        <span>Finance</span>
+                    </a>
+                </div>
 
                 <div class="menu-item">
-                    <a href="taskStaff">
-                        <span class="las la-tasks"></span>
+                    <a href="">
+                        <span class="las la-square-root-alt"></span>
+                        <span>Statistiques</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-file-invoice"></span>
                         <span>Tasks</span>
                     </a>
                 </div>
 
                 <div class="menu-item">
-                    <a href="SettingStaff">
-                        <span class="las la-cogs"></span>
+                    <a href="">
+                        <span class="las la-tools"></span>
                         <span>Setting</span>
                     </a>
                 </div>
             </div>
             <div class="sidebar-card">
-                <h3>Hello </h3>
+                <h3>Hello Doctor</h3>
                 <p>Happiness does not come
                     from doing easy work but
                     from the afterglow of
@@ -126,9 +129,7 @@
             <main>
                 <div class="page-header">
                     <h1>Have A Great Day</h1>
-                    <small>"Nothing ever comes to one,
-                        that is worth having,
-                        except as a result of hard work."</small>
+                    <small>"Almost nothing nee be said when you have eyes."</small>
                 </div>
 
                 <div class="grid-2">
@@ -168,7 +169,7 @@
                             </div>
                             <div id="style">
                                 <h3>Age :</h3>
-                                <h4>20ans</h4>
+                                <h4>24ans</h4>
                             </div>
                             <div id="style">
                                 <h3>Adresse Email :</h3>
@@ -201,6 +202,58 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="grid-2">
+                    <div class="card team-progress">
+                        <div class="card-hear">
+                            <div class="team-head">
+                                <div>
+                                    <img src="img/printer.png" alt="">
+                                    <h3>Observations</h3>
+                                    <button>view all</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+
+                            <div id="body1">
+                                <h4>Nom & Prénom:...................</h4>
+                                <h4>Le ../../....</h4>
+                            </div>
+                            <div id="body2">
+                                <form method="post" action="traitement.php">
+
+                                    <p>
+                                        <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
+
+                                        Améliorer ton site ?!
+
+                                        Mais enfin ! Il est tellement génialissime qu'il n'est pas nécessaire de l'améliorer !
+
+                                        </textarea>
+
+                                    </p>
+
+                                 </form>
+                            </div>
+                            <div id="footer">
+                                <div id="style3">
+                                    <h3 id="dep1">Adresse : 123,Avenue ,ville-Tél:77889922-77996644</h3>
+                                    <h3 id="dep2">adressemail@gmail.com</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="imp">
+
+                            <img src="img/printer.png" alt="">
+                            <button>imprimer</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="grid-2">
                     <div class="card team-progress">
                         <div class="card-hear">
@@ -229,7 +282,7 @@
                                     </div>
                                 </div>
                                 <div id="img">
-                                    <img src="img/medical-certificate.png" alt="">
+                                    <img src="img/medicine (1).png" alt="">
                                 </div>
                                 <div id="card2">
                                     <div id="style2">
@@ -271,7 +324,7 @@
                         <div class="card-hear">
                             <div class="team-head">
                                 <div>
-                                    <img src="img/medecine (1).png" alt="">
+                                    <img src="img/medical-certificate.png" alt="">
                                     <h3>Certificat </h3>
                                     <button>view all</button>
                                 </div>
@@ -294,7 +347,7 @@
                                     </div>
                                 </div>
                                 <div id="img">
-                                    <img src="img/medical-certificate.png" alt="">
+                                    <img src="img/medicine (1).png" alt="">
                                 </div>
                                 <div id="card2">
                                     <div id="style2">
@@ -309,11 +362,19 @@
                                 </div>
                             </div>
                             <div id="body1">
-                                <h3>Medical Certificate </h3>
+                                <h3>Certificat Médicale</h3>
                                 <h4>Fait à :................... Le ../../....</h4>
                                 <h4>Nom & Prénom:...................</h4>
                             </div>
                             <div id="body2">
+                                <div>Je soussigné, Dr ............ Certifie avoir examiné ce jour Mr , Mme,Melle,</div>
+                                <div>............................................................................ .
+                                </div>
+                                <div>Et déclare que son état de santé nécessite un repos de ................jours</div>
+                                <div>(.........j) à compter du : ................ sauf complications ultérieures.</div>
+                                <div>Certificat médical fait à la demande de l'interessé (e) pour servir et faire</div>
+                                <div>valoir ce que de droit.</div>
+                                <div id="signature">le Médecin</div>
                             </div>
                             <div id="footer">
                                 <div id="style3">

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planing staff</title>
-    <link rel="stylesheet" href="style.css">
+     <link href="{{url('css/styleStaffFiche.css')}}" rel="stylesheet">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 <style>
@@ -678,7 +678,7 @@ table h3,
             </div>
 
             <div class="profile-card">
-                <div class="profile-img" style="background-image: url(img/6.jpg)"></div>
+                <div class="profile-img" style="background-image: url(img/9.jpg)"></div>
                 <div class="profile-info">
                     <h2>Balghouthi Latifa</h2>
                     <small>Secrétaire Médicale</small>
@@ -720,7 +720,7 @@ table h3,
                 </div>
 
                 <div class="menu-item">
-                    <a href="">
+                    <a href="messagesStaff">
                         <span class="las la-comment-alt"></span>
                         <span>Messages</span>
                     </a>
@@ -798,7 +798,7 @@ table h3,
                         </div>
                         <div class="card-body" id="card">
                             <span class="body1">
-                                <h3>Month view for <span id="dateHolder" /></h3>
+                                <h3>Month view for <span id="dateHolder"/></h3>
                                 <table id="calWrapper">
                                 </table>
 
