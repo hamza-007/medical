@@ -48,104 +48,104 @@ Route::get('/fiche', function () {
     return view('fiche');
 });
 Route::get('/homedoctor', function () {
-    return view('doctor\homedoctor');
+    return view('doctor/homedoctor');
 });
 Route::get('/PatientDoctor', function () {
-    return view('doctor\PatientDoctor');
+    return view('doctor/PatientDoctor');
 });
 
 Route::get('/finance', function () {
-    return view('doctor\finance');
+    return view('doctor/finance');
 });
 Route::get('/addStaff', function () {
     return view('doctor/addStaff');
 });
 Route::get('/messagesdoctor', function () {
-    return view('doctor\messagesdoctor');
+    return view('doctor/messagesdoctor');
 });
 Route::get('/dossierPatient', function () {
-    return view('doctor\dossierPatient');
+    return view('doctor/dossierPatient');
 });
 
 Route::get('/planingdoctor', function () {
-    return view('doctor\planingdoctor');
+    return view('doctor/planingdoctor');
 });
 Route::get('/SettingDoctor', function () {
-    return view('doctor\SettingDoctor');
+    return view('doctor/SettingDoctor');
 });
 Route::get('/StatDoctor', function () {
-    return view('doctor\StatDoctor');
+    return view('doctor/StatDoctor');
 });
 Route::get('/TasksDoctor', function () {
-    return view('doctor\TasksDoctor');
+    return view('doctor/TasksDoctor');
 });
 
 Route::get('/confirm', function () {
-    return view('patient\homePatient');
+    return view('patient/homePatient');
 });
 Route::get('/homePatient', function () {
-    return view('patient\homePatient');
+    return view('patient/homePatient');
 });
 
 Route::get('/MessagesPatient', function () {
-    return view('patient\MessagesPatient');
+    return view('patient/MessagesPatient');
 });
 Route::get('/PlaningPatient', function () {
-    return view('patient\PlaningPatient');
+    return view('patient/PlaningPatient');
 });
 Route::get('/ProfilePatient', function () {
-    return view('patient\ProfilePatient');
+    return view('patient/ProfilePatient');
 });
 Route::get('/scd', function () {
-    return view('patient\scd');
+    return view('patient/scd');
 });
 Route::get('/SettingPatient', function () {
-    return view('patient\SettingPatient');
+    return view('patient/SettingPatient');
 });
 Route::get('/statPatient', function () {
-    return view('patient\statPatient');
+    return view('patient/statPatient');
 });
 Route::get('/tasksPatient', function () {
-    return view('patient\tasksPatient');
+    return view('patient/tasksPatient');
 });
 Route::get('/confirm', function () {
-    return view('staff\homeStaff');
+    return view('staff/homeStaff');
 });
 Route::get('/ficheStaff', function () {
-    return view('staff\ficheStaff');
+    return view('staff/ficheStaff');
 });
 Route::get('/homeStaff', function () {
-    return view('staff\homeStaff');
+    return view('staff/homeStaff');
 });
 Route::get('/messagesStaff', function () {
-    return view('staff\messagesStaff');
+    return view('staff/messagesStaff');
 });
 Route::get('/PatientStaff', function () {
-    return view('staff\PatientStaff');
+    return view('staff/PatientStaff');
 });
 Route::get('/staff', function () {
-    return view('staff\staff');
+    return view('staff/staff');
 });
 Route::get('/SettingStaff', function () {
-    return view('staff\SettingStaff');
+    return view('staff/SettingStaff');
 });
 Route::get('/planingStaff', function () {
-    return view('staff\planingStaff');
+    return view('staff/planingStaff');
 });
 Route::get('/taskStaff', function () {
-    return view('staff\taskStaff');
+    return view('staff/taskStaff');
 });
 
 Route::get('/Dossier', function () {
-    return view('staff\Dossier');
+    return view('staff/Dossier');
 });
 
 Route::get('/doctor/Dossier', function () {
-    return view('staff\Dossier');
+    return view('staff/Dossier');
 });
 
 Route::get('/singin', function () {
-    return view('staff\homestaff');
+    return view('staff/homestaff');
 });
 Route::post('/upload_staff', [staffController::class, 'upload']);
 Route::post('/appointment', [appointmentController::class, 'appointment']);
