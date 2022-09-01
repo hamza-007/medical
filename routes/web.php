@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\staffController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,14 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-require __DIR__ . '/auth.php';
-
-Route::get('/code', function () {
-    return view('code');
-});
 Route::get('/codestaff', function () {
     return view('codestaff');
+});
+Route::get('/code', function () {
+    return view('code');
 });
 Route::get('/confirmationStaff', function () {
     return view('confirmationStaff');
@@ -83,12 +80,9 @@ Route::get('/TasksDoctor', function () {
     return view('doctor\TasksDoctor');
 });
 
-
 Route::get('/confirm', function () {
     return view('patient\homePatient');
 });
-
-
 Route::get('/homePatient', function () {
     return view('patient\homePatient');
 });
@@ -102,6 +96,9 @@ Route::get('/PlaningPatient', function () {
 Route::get('/ProfilePatient', function () {
     return view('patient\ProfilePatient');
 });
+Route::get('/scd', function () {
+    return view('patient\scd');
+});
 Route::get('/SettingPatient', function () {
     return view('patient\SettingPatient');
 });
@@ -114,7 +111,6 @@ Route::get('/tasksPatient', function () {
 Route::get('/confirm', function () {
     return view('staff\homeStaff');
 });
-
 Route::get('/ficheStaff', function () {
     return view('staff\ficheStaff');
 });
@@ -151,3 +147,5 @@ Route::get('/doctor/Dossier', function () {
 Route::get('/singin', function () {
     return view('staff\homestaff');
 });
+Route::post('/upload_staff', [staffController::class, 'upload']);
+Route::post('/appointment', [appointmentController::class, 'appointment']);

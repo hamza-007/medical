@@ -239,21 +239,7 @@
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
-<<<<<<< HEAD
-            <div class="contentBx">
-                <div class="formBx">
-                    <h2>
-                      Login
-                    </h2>
-                    <form  method="Post" action="{{route('login')}}">
-                        <div class="inputBx">
-                            <span>Username</span>
-                            <input type="text" name="">
-                        </div>
-=======
         </div>
->>>>>>> 27170c69bf3e11dbcafd53f727702cf566076e68
-
     </section>
 </body>
 

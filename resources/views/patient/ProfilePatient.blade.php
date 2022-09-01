@@ -287,7 +287,7 @@
                                         <td >Kairouan</td>
                                         <td id="action">
                                             <a href="" class="btn btn-skip" >Cancel</a>
-                                            <a href="" class="btn btn-primary">Re-Schedule</a>
+                                            <a href="scd" class="btn btn-primary">Re-Schedule</a>
                                         </td>
                                     </tr>
 

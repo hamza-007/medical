@@ -102,8 +102,10 @@
                         <div class="col-md-6 pl-md-5 content" data-aos="fade-left">
                             <h1><span>stay</span> safe, <span>stay</span> healthy.</h1>
                             <h3>caring for you.</h3>
+            
                             <a href="loginstaff"><button class="button">login Staff</button></a>
                             <a href="loginpatient"><button class="button">login Patient</button></a>
+
                         </div>
 
                     </div>
