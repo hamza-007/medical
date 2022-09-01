@@ -83,19 +83,16 @@ Route::get('/TasksDoctor', function () {
     return view('doctor\TasksDoctor');
 });
 
-<<<<<<< HEAD
+
 Route::get('/confirm', function () {
     return view('patient\homePatient');
-=======
-Route::get('/confirmation', function () {
-    return view('homePatient');
->>>>>>> 27170c69bf3e11dbcafd53f727702cf566076e68
 });
 
 
 Route::get('/homePatient', function () {
     return view('patient\homePatient');
 });
+
 Route::get('/MessagesPatient', function () {
     return view('patient\MessagesPatient');
 });
@@ -142,12 +139,15 @@ Route::get('/planingStaff', function () {
 Route::get('/taskStaff', function () {
     return view('staff\taskStaff');
 });
+
 Route::get('/Dossier', function () {
     return view('staff\Dossier');
 });
+
 Route::get('/doctor/Dossier', function () {
     return view('staff\Dossier');
 });
+
 Route::get('/singin', function () {
     return view('staff\homestaff');
 });
