@@ -887,6 +887,9 @@
                             <div><img src="img/help-desk.png" alt="">
                                 <h3><a href="#">Aide</a></h3>
                             </div>
+                            <div><img src="img/web-management.png" alt="">
+                                <h3><a href="#">log out</a></h3>
+                            </div>
                         </div>
                         <div class="quotes">
                             <p class="p1">

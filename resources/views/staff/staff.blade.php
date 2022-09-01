@@ -180,7 +180,8 @@
                                             <h4>votre Observation</h4>
                                         </td>
                                         <td>
-                                            <i class="las la-user-plus" id="plus"></i> <i class="las la-user-edit" id="edit"></i>
+                                            <a href="#"><i class="las la-user-plus" id="plus"></i> </a>
+                                            <a href=""><i class="las la-user-edit" id="edit"></i></a>
                                         </td>
 
                                     </tr>
@@ -209,7 +210,8 @@
                                             <h4>votre Observation</h4>
                                         </td>
                                         <td>
-                                            <i class="las la-user-plus" id="plus"></i> <i class="las la-user-edit" id="edit"></i>
+                                           <a href=""> <i class="las la-user-plus" id="plus"></i></a>
+                                          <a href=""> <i class="las la-user-edit" id="edit"></i></a>
                                         </td>
 
                                     </tr>

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard Pacers</title>
+    <title>Add Staff</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -349,7 +348,7 @@
         }
 
         .chart-wrapper {
-            padding-top: 1rem 0rem;
+            padding-top: 1rem;
         }
 
         .emails-info {
@@ -780,19 +779,24 @@
             width: 27rem;
             height: 27rem;
         }
+
         #button {
             display: flex;
             margin: 1rem;
             margin-left: 7rem;
         }
+
         #button button {
-            margin-right: .5rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
         }
+
         #Delete {
             border: 1px solid #074c66;
             background: transparent !important;
             color: #254e7a;
         }
+
     </style>
 
 </head>
@@ -920,61 +924,100 @@
                     <small>"Almost nothing nee be said when you have eyes."</small>
                 </div>
                 <h1>Add Staff</h1>
-                <div class="main-home">
-                    <div class="card-body">
-                        <div id="style">
-                            <h3>Matricule Sociale :</h3>
-                            <h4>..........</h4>
-                        </div>
-                        <div id="style">
-                            <h3>Prenom :</h3>
-                            <h4>..........</h4>
-                        </div>
-                        <div id="style">
-                            <h3>Nom :</h3>
-                            <h4>..........</h4>
-                        </div>
-                        <div id="style">
-                            <h3>Cin :</h3>
-                            <h4>..........</h4>
-                        </div>
-                        <div id="style">
-                            <h3>Num :</h3>
-                            <h4>..........</h4>
-                        </div>
-                        <div id="style">
-                            <h3>Sexe :</h3>
-                            <h4>...</h4>
-                        </div>
-                        <div id="style">
-                            <h3>Age :</h3>
-                            <h4>..........</h4>
-                        </div>
-                        <div id="style">
-                            <h3>Adresse Email :</h3>
-                            <h4>...............</h4>
-                        </div>
-                        <div id="style">
-                            <h3>Adresse :</h3>
-                            <h4>....................</h4>
-                        </div>
-                        <div id="style">
-                            <h3>Niveau d'étude :</h3>
-                            <h4>....................</h4>
-                        </div>
-                        <div id="button">
-                            <button type="button" class="btn btn-primary">Add</button>
-                            <button type="button" id="Delete" class="btn btn-outline-primary">Delete</button>
-                        </div>
-                    </div>
-                    <img id="image" src="img/home-img.svg" alt="">
+                @if(session()->has('messgae'))
+                <div class="alert alert-success">
+                    <button type ="button" class="close" data-dismiss="alert">
+                        x
+                    </button>
+                    {{session()->get('message')}}
                 </div>
+                @endif
+                <form action="{{url('upload_staff')}}" method="Post" enctype="multipart/form-data">
+                @csrf
+                    <div class="main-home">
+                        <div class="card-body">
+                            <div id="style">
+                                <label>
+                                    <h3>Staff picture :</h3>
+                                </label>
+                                <input type="file"  style="color:black;" name="image" required="" required="">
+                            </div>
+                            <div id="style">
+                                <label>
+                                    <h3>Matricule Sociale :</h3></label>
+                                <input type='text' style="color:black;" name="matricule" required="" placeholder=" write matricule">
+                            </div>
+                            <div id="style">
+                                <label>
+                                     <h3>Prenom :</h3>
+                                </label>
+                                <input type='text' style="color:black;" name="prenom" required="" placeholder=" Prenom">
+                            </div>
+                            <div id="style">
+                                <label>
+                                    <h3>Nom :</h3>
+                                </label>
+                                <input type='text' style="color:black;" name="nom" required="" placeholder=" write Nom">
+                            </div>
+                            <div id="style">
+                                <label>
+                                    <h3>Cin :</h3>
+                                </label>
+                                <input type='number' style="color:black;" name="cin"  required="" placeholder=" 12345678">
+                            </div>
+                            <div id="style">
+                                <label>
+                                    <h3>Num:</h3>
+                                </label>
+                                <input type='number' style="color:black;" name="num" required="" placeholder="12345678">
+                            </div>
+                            <div id="style">
+                                <label>
+                                    <h3>Sexe :</h3>
+                                </label>
+                                <select name="sexe" required="">
+                                    <option>--Select--</option>
+                                    <option value="f">F</option>
+                                    <option value="m">M</option>
+                                </select>
+                            </div>
+                            <div id="style">
+                                <label>
+                                    <h3> Age:</h3>
+                                </label>
+                                <input type='number' style="color:black;" name="age"  required=""   placeholder=" write matricule">
+                            </div>
+                            <div id="style">
+                                <label>
+                                    <h3>Adresse Email :</h3>
+                                </label>
+                                <input type='email' style="color:black;" name="email" required=""
+                                    placeholder=" example@gmail.com">
 
+                            </div>
+                            <div id="style">
+                                <label>
+                                    <h3>Adresse :</h3>
+                                </label>
+                                <input type='text' style="color:black;" name="adresse" required="" placeholder="adresse">
+                            </div>
+                            <div id="style">
+                                <label>
+                                    <h3>Niveau d'étude :</h3>
+                                </label>
+                                <input type='text' style="color:black;" name="etude" required=""
+                                    placeholder=" niveau d'etude">
+                            </div>
+                            <div id="button">
+                                <input type="submit" class="btn btn-primary"  value="Add">
+                                <button type="submit" id="Delete" class="btn btn-outline-primary">Delete</button>
+                            </div>
+                        </div>
+                        <img id="image" src="img/home-img.svg" alt=""/>
+                    </div>
+                </form>
+            </main>
         </div>
-        </main>
     </div>
-    </div>
-
 </body>
-
 </html>

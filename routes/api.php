@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Patient;
+use App\Http\Controllers\patientController;
+use App\Http\Controllers\staffController;
+use App\Models\staff;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,12 +26,10 @@ Route::prefix('/patient')->group(function () {
     Route::post("/update/{id}", 'App\Http\Controllers\patientController@UpdatePatient');
 });
 
-Route::post("/sign-in",function(){
-    $username= request ("username");
+Route::post("/sign-in", function () {
+    $username = request("username");
     $password = request("password");
 });
-
-
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
