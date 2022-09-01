@@ -940,7 +940,7 @@
                                 <label>
                                     <h3>Staff picture :</h3>
                                 </label>
-                                <input type="file"  style="color:black;" name="image" required="" required="">
+                                <input type="file"  style="color:black;" name="" required="" required="">
                             </div>
                             <div id="style">
                                 <label>

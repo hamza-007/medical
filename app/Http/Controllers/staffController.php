@@ -2,19 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Staff;
 use Illuminate\Http\Request;
-use app\Models\staff;
+
 
 class staffController extends Controller
 {
     //
     public function upload(Request $request)
     {
-        $staff = new staff;
-        $img = $request->image;
-        $imagename = time() . '.' . $img->getClientoriginalExtension();
-        $request->image->move('staffimage', $imagename);
-        $staff->img = $imagename;
+        $staff = new Staff();
+        // $img = $request->image;
+        // $imagename = time() . '.' . $img->getClientoriginalExtension();
+        // $request->image->move('staffimage', $imagename);
+        $staff->image = 'to fix later';
         $staff->matricule = $request->matricule;
         $staff->prenom = $request->prenom;
         $staff->nom = $request->nom;

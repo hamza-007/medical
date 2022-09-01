@@ -58,7 +58,7 @@ Route::get('/finance', function () {
     return view('doctor\finance');
 });
 Route::get('/addStaff', function () {
-    return view('doctor\addStaff');
+    return view('doctor/addStaff');
 });
 Route::get('/messagesdoctor', function () {
     return view('doctor\messagesdoctor');

@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 /**faire lien avec BD*/
 
-use Illuminate\Support\facades\Schema;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
